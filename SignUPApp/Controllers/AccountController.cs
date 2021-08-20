@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace SignUPApp.Controllers
 {
     public class AccountController : Controller
@@ -54,7 +55,7 @@ namespace SignUPApp.Controllers
         {
             IEnumerable<CityModel> Cities = new CityModel().GetCityNames().Where(x => x.CountryId == CountryId).ToList();
 
-            return Json(new SelectList(Cities, "CityId", "City"));
+            return Json(new SelectList(Cities, "CityId", "CityName"));
         }
 
 

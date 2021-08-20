@@ -7,7 +7,7 @@ namespace SignUPApp.Models
 {
     public class CityModel
     {
-             public string CityId { get; set; }
+            public string CityId { get; set; }
             public string CityName { get; set; }
             public string CountryId { get; set; }
             public CountryModel Country { get; set; }

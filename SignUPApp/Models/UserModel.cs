@@ -28,16 +28,17 @@ namespace SignUPApp.Models
         public string Contact { get; set; }
 
         //ADded country and city
+        [Display(Name ="Country")]
         [Required(ErrorMessage = "Please select Country")]
         public string CountryId { get; set; }
         public CountryModel Country { get; set; }
 
         [Required(ErrorMessage = "Please select City")]
-       
+        [Display(Name = "City")]
         public string CityId { get; set; }
         public CityModel City { get; set; }
 
-        ///ADded country and city
+       
         [Required(ErrorMessage = "Please enter the gender")]
         public string Gender { get; set; }
        

@@ -12,7 +12,7 @@ namespace SignUPApp.Attributes
         public void AddValidation(ClientModelValidationContext context)
         {
            context.Attributes.Add("data-val-checkbox", ErrorMessage);
-           //context.Attributes.Add("data-val-radio", ErrorMessage);
+           
         }
 
         public override bool IsValid(object value)
